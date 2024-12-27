@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: b93187de8673643afae00780f78c83dd
+NativeFormatImporter:
+  userData: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 20031
+  packageName: '"Query-Chan" model'
+  packageVersion: 2.1.0
+  assetPath: Assets/query-chan-model/PQAssets/Query-Chan/Models/PQchan_AnimController.controller
+  uploadId: 287948

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 410d8cba769844705b98ce240462fa0c
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 20031
+  packageName: '"Query-Chan" model'
+  packageVersion: 2.1.0
+  assetPath: Assets/query-chan-model/PQAssets/Query-Chan/Scripts/CameraAction.cs
+  uploadId: 287948

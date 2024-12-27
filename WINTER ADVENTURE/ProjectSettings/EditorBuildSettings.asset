@@ -6,8 +6,35 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Christmas Scene/Assets/Scene/ChristmasScene.unity
+    guid: beebb466b517c6f46806fa2ee73f8580
+  - enabled: 1
+    path: Assets/FurnishedCabin/Scenes/Demo.unity
+    guid: 0bce5907d797a4cd8b0660dc119867e8
+  - enabled: 1
+    path: Assets/Main-Game/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/query-chan-model/PQAssets/Query-Chan/Scenes/01_OperateQuery_Standing.unity
+    guid: acbd93d50db3e4489849ce2e88f7d7a5
+  - enabled: 1
+    path: Assets/query-chan-model/PQAssets/Query-Chan/Scenes/02_OperateQuery_Flying.unity
+    guid: 68fac5ef7ca534bf981c63440b33f04c
+  - enabled: 1
+    path: Assets/query-chan-model/PQAssets/Query-Chan/Scenes/03_OperateQuery_Attack.unity
+    guid: f65ba8cc4f6bb461ea808a7b8d1d4a9c
+  - enabled: 1
+    path: Assets/query-chan-model/PQAssets/Query-Chan/Scenes/04_OperateQuery_Halloween.unity
+    guid: 8cc99d80e9ef84a7b82d6c1df535f001
+  - enabled: 1
+    path: Assets/query-chan-model/PQAssets/Query-Chan/Scenes/05_OperateQuery_Locomotion.unity
+    guid: 6b7e6611ae0024ce7ae030a9e38e4f1a
+  - enabled: 1
+    path: Assets/query-chan-model/PQAssets/Query-Chan/Scenes/06_OperateQuery_Christmas.unity
+    guid: eacfd58b2c13641b4ab8d24e660b1b6b
+  - enabled: 1
+    path: Assets/query-chan-model/PQAssets/Query-Chan/Scenes/50_WhiteChristmas.unity
+    guid: 559eff3f1c37b448bae82a7f31bcfa3c
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

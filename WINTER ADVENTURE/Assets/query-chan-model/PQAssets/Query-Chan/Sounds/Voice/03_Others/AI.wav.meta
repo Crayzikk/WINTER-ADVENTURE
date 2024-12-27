@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 570a5d3b3eac4468bb325e85fcd4c099
+AudioImporter:
+  serializedVersion: 4
+  format: 0
+  quality: .5
+  stream: 1
+  3D: 0
+  forceToMono: 0
+  useHardware: 0
+  loopable: 0
+  userData: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 20031
+  packageName: '"Query-Chan" model'
+  packageVersion: 2.1.0
+  assetPath: Assets/query-chan-model/PQAssets/Query-Chan/Sounds/Voice/03_Others/AI.wav
+  uploadId: 287948

@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: 48d32965ecd2e4f23aef19440f80a28c
+NativeFormatImporter:
+  userData: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 20031
+  packageName: '"Query-Chan" model'
+  packageVersion: 2.1.0
+  assetPath: Assets/query-chan-model/PQAssets/Query-Chan/Materials/mat_SkeltonBlue.mat
+  uploadId: 287948

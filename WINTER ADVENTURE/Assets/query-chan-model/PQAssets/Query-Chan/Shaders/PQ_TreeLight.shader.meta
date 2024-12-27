@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: 38e6b45d21107864a9f7051b756b5da6
+ShaderImporter:
+  defaultTextures: []
+  userData: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 20031
+  packageName: '"Query-Chan" model'
+  packageVersion: 2.1.0
+  assetPath: Assets/query-chan-model/PQAssets/Query-Chan/Shaders/PQ_TreeLight.shader
+  uploadId: 287948

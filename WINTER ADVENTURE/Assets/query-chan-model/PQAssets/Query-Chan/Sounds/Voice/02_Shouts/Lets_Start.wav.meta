@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: fca9847c6920643cc917195f4c0578cf
+AudioImporter:
+  serializedVersion: 4
+  format: 0
+  quality: .5
+  stream: 1
+  3D: 0
+  forceToMono: 0
+  useHardware: 0
+  loopable: 0
+  userData: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 20031
+  packageName: '"Query-Chan" model'
+  packageVersion: 2.1.0
+  assetPath: Assets/query-chan-model/PQAssets/Query-Chan/Sounds/Voice/02_Shouts/Lets_Start.wav
+  uploadId: 287948
