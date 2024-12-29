@@ -11,7 +11,7 @@ public class PlayerMovement : MonoBehaviour
     private float horizontalInput = 0f;
     private float verticalInput = 0f;
     private float jumpInput = 0f;
-    
+
     private bool isJumping;
     private bool isRunning;
 
@@ -34,28 +34,37 @@ public class PlayerMovement : MonoBehaviour
     {
         RunPlayer();
 
-        if(isJumping && groundCheck.checkGroundPlayer)
+        if (isJumping && groundCheck.checkGroundPlayer)
             JumpPlayer();
     }
 
     private void RunPlayer()
     {
-        float targetSpeed = 0f;
-
-        if(isRunning && groundCheck.checkGroundPlayer)
-        {
-            targetSpeed = speedPlayerInRunning;    
-        }
-        else
-        {
-            targetSpeed = speedPlayer;
-        }
-
+        float targetSpeed = isRunning ? speedPlayerInRunning : speedPlayer;
         float speed = Mathf.Lerp(rigidbodyPlayer.linearVelocity.magnitude, targetSpeed, 4f * Time.deltaTime);
 
+        RaycastHit hit;
         Vector3 moveDirection = (transform.forward * verticalInput + transform.right * horizontalInput).normalized;
+
+        if (Physics.Raycast(transform.position, Vector3.down, out hit, 1.5f))
+        {
+            Vector3 surfaceNormal = hit.normal;
+            float slopeAngle = Vector3.Angle(Vector3.up, surfaceNormal);
+
+            float maxSlopeAngle = 45f; 
+            if (slopeAngle > maxSlopeAngle)
+            {
+                moveDirection = Vector3.zero; 
+            }
+        }
+
         Vector3 velocity = moveDirection * speed;
         velocity.y = rigidbodyPlayer.linearVelocity.y;
+
+        float maxSpeed = isRunning ? speedPlayerInRunning : speedPlayer;
+        Vector3 clampedVelocity = Vector3.ClampMagnitude(new Vector3(velocity.x, 0, velocity.z), maxSpeed);
+        velocity.x = clampedVelocity.x;
+        velocity.z = clampedVelocity.z;
 
         rigidbodyPlayer.linearVelocity = velocity;
     }

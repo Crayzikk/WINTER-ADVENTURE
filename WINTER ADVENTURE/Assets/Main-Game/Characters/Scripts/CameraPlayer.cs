@@ -20,6 +20,24 @@ public class CameraPlayer : MonoBehaviour
 
     void Update()
     {
+        MoveCamera();
+
+        if(Input.GetKeyDown(KeyCode.E))
+        {
+            Ray ray = new Ray(transform.position, transform.forward);
+
+            if(Physics.Raycast(ray, out RaycastHit hit, 2f))
+            {
+                if(hit.collider.CompareTag("Door"))
+                {
+                    hit.collider.GetComponent<DoorController>().OpenOrCloseDoor();
+                }
+            }
+        }
+    }
+
+    private void MoveCamera()
+    {
         float mouseX = Input.GetAxisRaw("Mouse X") * Time.deltaTime * senseX;
         float mouseY = Input.GetAxisRaw("Mouse Y") * Time.deltaTime * senseY;
         

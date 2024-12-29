@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Christmas Scene/Assets/Scene/ChristmasScene.unity
     guid: beebb466b517c6f46806fa2ee73f8580
   - enabled: 1
+    path: Assets/Food Pack-Demo/Scenes/DemoScene.unity
+    guid: 369d9cefb16425e439cba83b325afc71
+  - enabled: 1
     path: Assets/FurnishedCabin/Scenes/Demo.unity
     guid: 0bce5907d797a4cd8b0660dc119867e8
   - enabled: 1
@@ -35,6 +38,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/query-chan-model/PQAssets/Query-Chan/Scenes/50_WhiteChristmas.unity
     guid: 559eff3f1c37b448bae82a7f31bcfa3c
+  - enabled: 1
+    path: Assets/TheGamingPeople/Courtyard and Entrance/DemoScenes/DemoComplete.unity
+    guid: fd8968bb1683cb64e9140c4b5eb44843
+  - enabled: 1
+    path: Assets/TheGamingPeople/Courtyard and Entrance/DemoScenes/DemoEntry1.unity
+    guid: 23316c59d7edc5242975a41d35a38c73
+  - enabled: 1
+    path: Assets/TheGamingPeople/Courtyard and Entrance/DemoScenes/DemoEntry2.unity
+    guid: 84d75ff3513f4bd46830f713af380812
+  - enabled: 1
+    path: Assets/TheGamingPeople/Shed Bridge Tools and Fences/DemoScene.unity
+    guid: 4ec367a355b507e4dacfa0c5f10e3543
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
