@@ -32,6 +32,33 @@ public class CameraPlayer : MonoBehaviour
                 {
                     hit.collider.GetComponent<DoorController>().OpenOrCloseDoor();
                 }
+                else if(hit.collider.CompareTag("Character"))
+                {
+                    Character character = hit.collider.GetComponent<Character>();
+                    
+                    if(character.Idialog && !character.IdialogPlayer)
+                    {
+                        DialogController.dialogStart = true;                    
+                        
+                        if(character.IdialogContinue)
+                        {
+                            DialogController.dialogIsContinue = true;
+                            DialogController.countDialogPhrases = character.countPhrases;
+                        }
+                    }
+                    
+                    character.IdialogPlayer = true;
+                }
+                else if(hit.collider.CompareTag("Chrismas"))
+                {
+                    PlotControllerSceneOne.countDecorationActive++;
+                    hit.collider.GetComponent<DecorationHouse>().ShowChrismas();
+                }
+                else if(hit.collider.CompareTag("ChrismasBox"))
+                {
+                    PlotControllerSceneOne.playerTakeTheBox = true;
+                    hit.collider.GetComponent<DecorationHouse>().ShowChrismas();
+                }
             }
         }
     }
