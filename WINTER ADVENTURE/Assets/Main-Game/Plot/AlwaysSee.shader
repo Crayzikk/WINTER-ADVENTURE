@@ -37,7 +37,7 @@ Shader "Custom/AlwaysVisibleShader"
 
             fixed4 frag () : SV_Target
             {
-                return fixed4(1, 0, 0, 0.1); // Червоний колір з прозорістю 50%
+                return fixed4(1, 0, 0, 0.8); // Червоний колір з прозорістю 50%
             }
             ENDCG
         }

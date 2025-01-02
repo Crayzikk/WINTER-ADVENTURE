@@ -25,8 +25,8 @@ public class DialogController : MonoBehaviour
 
     void Start()
     {
-        indexNameCharacterDialog = 0;
-        indexPharesesDialog = 0;
+        indexNameCharacterDialog = 4;
+        indexPharesesDialog = 4;
 
         HideDialog();
     }
@@ -35,6 +35,7 @@ public class DialogController : MonoBehaviour
     {
         if(dialogStart)
         {
+            PlayerMovement.playerMoving = false;
             dialog = true;
             dialogStart = false;
             endDialog = false;
@@ -42,7 +43,7 @@ public class DialogController : MonoBehaviour
             ShowDialog();
         }
 
-        if(Input.GetKey(KeyCode.F) && dialog)
+        if(Input.GetKeyDown(KeyCode.F) && dialog)
         {        
             dialog = false;
 
@@ -59,6 +60,7 @@ public class DialogController : MonoBehaviour
             }
             else
             {
+                PlayerMovement.playerMoving = true;
                 endDialog = true;
                 HideDialog();
             }
@@ -67,11 +69,9 @@ public class DialogController : MonoBehaviour
 
     private void RunDialog()
     {
-
+        Debug.Log($"{indexNameCharacterDialog} | {indexPharesesDialog}");
         textCharacter.text = nameCharacterDialog[indexNameCharacterDialog];
-
         textDialog.text = phrasesDialog[indexPharesesDialog];
-
     }
 
     private void ShowDialog()

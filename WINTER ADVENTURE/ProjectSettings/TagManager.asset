@@ -9,6 +9,11 @@ TagManager:
   - Character
   - Chrismas
   - ChrismasBox
+  - Enemy
+  - WayPoint
+  - WayPointFriend
+  - WayPointHome
+  - WayPointPaper
   layers:
   - Default
   - TransparentFX

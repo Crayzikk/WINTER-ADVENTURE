@@ -15,6 +15,8 @@ public class PlayerMovement : MonoBehaviour
     private bool isJumping;
     private bool isRunning;
 
+    public static bool playerMoving = true;
+
     void Start()
     {
         rigidbodyPlayer = GetComponent<Rigidbody>();
@@ -22,12 +24,16 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        horizontalInput = Input.GetAxisRaw("Horizontal");
-        verticalInput = Input.GetAxisRaw("Vertical");
-        jumpInput = Input.GetAxisRaw("Jump");
+        if(playerMoving)
+        {
+            horizontalInput = Input.GetAxisRaw("Horizontal");
+            verticalInput = Input.GetAxisRaw("Vertical");
+            jumpInput = Input.GetAxisRaw("Jump");
 
-        isJumping = jumpInput > 0;
-        isRunning = Input.GetKey(KeyCode.LeftShift);
+            isJumping = jumpInput > 0;
+            isRunning = Input.GetKey(KeyCode.LeftShift);            
+        }
+
     }
 
     void FixedUpdate()

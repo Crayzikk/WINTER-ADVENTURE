@@ -1,7 +1,10 @@
+using System.Linq.Expressions;
 using UnityEngine;
 
 public class CameraPlayer : MonoBehaviour
 {
+    public static bool rotationPlayer;
+
     [SerializeField] private float senseX;
     [SerializeField] private float senseY;
     [SerializeField] private Transform player;
@@ -59,6 +62,22 @@ public class CameraPlayer : MonoBehaviour
                     PlotControllerSceneOne.playerTakeTheBox = true;
                     hit.collider.GetComponent<DecorationHouse>().ShowChrismas();
                 }
+                else if(hit.collider.CompareTag("WayPointPaper"))
+                {
+                    PlotControllerSceneOne.playerTakePaper = true;
+                    hit.collider.GetComponent<WayPoint>().ShowPoint();
+                }
+                else if(hit.collider.CompareTag("WayPointFriend"))
+                {
+                    hit.collider.GetComponent<WayPoint>().ShowPoint();
+                    PlotControllerSceneOne.playerWalkInFriends = true;
+                }
+                else if(hit.collider.CompareTag("WayPointHome"))
+                {
+                    hit.collider.GetComponent<WayPoint>().ShowPoint();
+                    PlotControllerSceneOne.playerWalkInHouse = true;
+                }
+
             }
         }
     }
@@ -79,4 +98,6 @@ public class CameraPlayer : MonoBehaviour
         transform.rotation = Quaternion.Euler(currentXRotation, currentYRotation, 0);
         player.rotation = Quaternion.Euler(0, currentYRotation, 0);
     }
+
 }
+
